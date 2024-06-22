@@ -55,3 +55,62 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
     border-radius: 50%;
 }
+
+input[type=range].range-slider-100 {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 8px;
+    background: linear-gradient(to right,
+        #696565 0%,
+        #696565 calc(100% / 11 - 1px),
+        black calc(100% / 11),
+        #696565 calc(100% / 11 + 1px),
+        #696565 calc(200% / 11 - 1px),
+        black calc(200% / 11),
+        #696565 calc(200% / 11 + 1px),
+        #696565 calc(300% / 11 - 1px),
+        black calc(300% / 11),
+        #696565 calc(300% / 11 + 1px),
+        #696565 calc(400% / 11 - 1px),
+        black calc(400% / 11),
+        #696565 calc(400% / 11 + 1px),
+        #696565 calc(500% / 11 - 1px),
+        black calc(500% / 11),
+        #696565 calc(500% / 11 + 1px),
+        #696565 calc(600% / 11 - 1px),
+        black calc(600% / 11),
+        #696565 calc(600% / 11 + 1px),
+        #696565 calc(700% / 11 - 1px),
+        black calc(700% / 11),
+        #696565 calc(700% / 11 + 1px),
+        #696565 calc(800% / 11 - 1px),
+        black calc(800% / 11),
+        #696565 calc(800% / 11 + 1px),
+        #696565 calc(900% / 11 - 1px),
+        black calc(900% / 11),
+        #696565 calc(900% / 11 + 1px),
+        #696565 100%);
+    outline: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+input[type=range].range-slider-100::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #121518;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type=range].range-slider-100::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #121518;
+    cursor: pointer;
+    border-radius: 50%;
+}
